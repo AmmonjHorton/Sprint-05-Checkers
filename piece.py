@@ -1,5 +1,5 @@
 import pygame
-from chaeckers2 import SQUARE_SIZE, GREY, WHITE
+from checkers2 import SQUARE_SIZE, GREY, WHITE
 class Piece:
     # Padding ensures the piece is slightly smaller than the square it sits in
     PADDING = 15

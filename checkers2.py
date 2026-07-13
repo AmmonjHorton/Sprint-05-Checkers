@@ -15,11 +15,11 @@ BLACK = (0, 0, 0)
 GREY = (128, 128, 128)
 
 def draw_squares(win):
-    win.fill(BLACK) # Start by making the whole background dark
+    win.fill(BLACK) 
     for row in range(ROWS):
-        # This math ensures the colors alternate every row and column
         for col in range(row % 2, COLS, 2):
-            pygame.draw.rect(win, WHITE, (row * SQUARE_SIZE, col * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
+            # FIX: Swapped 'col' and 'row' so X and Y map correctly to the screen
+            pygame.draw.rect(win, WHITE, (col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
 
 def main():
     run = True
